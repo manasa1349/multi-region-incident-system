@@ -1,22 +1,20 @@
 {
   "name": "multi-region-incident-system",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Multi-region incident management system with vector clocks",
+  "main": "src/server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "axios": "^1.13.5",
-    "dotenv": "^17.3.1",
-    "express": "^5.2.1",
-    "pg": "^8.18.0",
-    "uuid": "^13.0.0"
+    "axios": "^1.6.0",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "pg": "^8.11.3",
+    "uuid": "^8.3.2"
   },
   "devDependencies": {
-    "nodemon": "^3.1.14"
+    "nodemon": "^3.0.1"
   }
 }
