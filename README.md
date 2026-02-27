@@ -47,12 +47,12 @@ Region Service ↔ Region Service (HTTP replication)
 Each region operates independently and converges through asynchronous replication.
 
 ### Architecture
-
-                  +-------------------+
-                  |      Client       |
-                  +-------------------+
-                           |
-         -----------------------------------------
+```
+                   +-------------------+
+                   |      Client       |
+                   +-------------------+
+                            |
+        ----------------------------------------
          |                  |                   |
   +---------------+  +---------------+  +---------------+
   |   region-us   |  |   region-eu   |  |  region-apac  |
@@ -61,7 +61,7 @@ Each region operates independently and converges through asynchronous replicatio
   +---------------+  +---------------+  +---------------+
   |     db-us     |  |     db-eu     |  |    db-apac    |
   +---------------+  +---------------+  +---------------+
-
+```
 Replication:
 region-us  <--> region-eu
 region-us  <--> region-apac
